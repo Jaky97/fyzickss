@@ -1,0 +1,236 @@
+/* Základní styly a barvy Tempest */
+:root {
+  --primary-blue: #5dade2;
+  --dark-blue: #2e86c1;
+  --forest-green: #27ae60;
+  --wood-brown: #8d6e63;
+  --tempest-bg: #f4f7f6;
+  --rimuru-glow: 0 0 15px rgba(93, 173, 226, 0.5);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('images/background.webp') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Hero sekce */
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.4);
+  color: white;
+  text-align: center;
+}
+
+.hero-rimuru {
+  height: 400px;
+  filter: drop-shadow(var(--rimuru-glow));
+}
+
+.hero-badge {
+  background: var(--primary-blue);
+  padding: 5px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Dialogy */
+.dialog-scene {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.dialog-char {
+  width: 100px;         /* Pevná šířka pro postavičku v dialogu */
+  height: 100px;        /* Pevná výška */
+  object-fit: contain;  /* Zajistí, že se obrázek v kruhu neoseká špatně */
+  border-radius: 50%;
+  background: white;
+  border: 3px solid var(--primary-blue);
+  flex-shrink: 0;       /* Zabrání tomu, aby se obrázek smáčknul, když je v bublině hodně textu */
+}
+
+.dialog-bubble {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 5px 5px 0px var(--primary-blue);
+  flex: 1;
+}
+
+/* Karty veličin */
+.units-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.unit-card {
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 8px solid var(--primary-blue);
+  background: #fff;
+  transition: transform 0.3s;
+}
+
+.unit-avatar {
+  width: 110px;          /* Velikost ikony u vysvětlování veličin */
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.unit-card:hover { transform: translateY(-5px); }
+.unit-symbol { font-size: 2rem; font-weight: bold; color: var(--dark-blue); }
+
+/* Herní Modal */
+.game-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.hidden { display: none !important; }
+
+.game-window {
+  background: white;
+  width: 90%;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Loď v náhledu */
+.shape-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.shape-card {
+  border: 2px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.shape-card:hover { border-color: var(--primary-blue); background: #f0faff; }
+
+/* Oprava velikosti obrázků v herním okně */
+.game-char {
+  width: 150px !important; /* Vynutí velikost postavy v dialogu hry */
+  height: auto;
+  flex-shrink: 0;
+}
+
+.game-step {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ship-preview svg {
+  width: 100%;    /* SVG se přizpůsobí kartě */
+  height: auto;
+  max-width: 120px;
+}
+
+/* Oprava layoutu vyvažování (Krok 2) */
+.balance-layout {
+  display: flex;
+  flex-wrap: wrap; /* Pokud se to nevejde vedle sebe, hodí se to pod sebe */
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.balance-controls {
+  flex: 1;
+  min-width: 250px;
+}
+
+.balance-visual {
+  flex: 1;
+  min-width: 250px;
+  background: rgba(255,255,255,0.5);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Visualizace plavání */
+.water-scene {
+  height: 200px;
+  background: #ebf5fb;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.water-area {
+  height: 50%;
+  background: #2980b9;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.ship-above-water {
+  width: 120px;
+  height: 40px;
+  background: #bdc3c7;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px 5px 0 0;
+}
+
+.ship-below-water {
+  width: 120px;
+  background: #c0392b;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 10px 10px;
+}
+
+.btn-main {
+  background: var(--forest-green);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-main:hover { background: #219150; }

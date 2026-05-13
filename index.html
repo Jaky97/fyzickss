@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tempest Loděnice — Archimédův zákon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HERO SEKCE ===== -->
+  <section id="hero">
+    <div class="hero-content">
+      <img src="images/Demon_Lord_Rimuru_Anime.webp" alt="Rimuru Tempest" class="hero-rimuru">
+      <div class="hero-text">
+        <div class="hero-badge">⚓ Tempest Loděnice &amp; Akademie</div>
+        <h1>Archimédův zákon</h1>
+        <p class="hero-sub">Nechceš se utopit? Přečti si tohle noobe.<br>Čeká na tebe práce. Když to uděláš špatně nebudeš mít žádný rizz.</p>
+        <button class="btn-main" onclick="scrollToLesson()">Začít výuku ↓</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VÝUKOVÁ SEKCE ===== -->
+  <section id="lesson">
+    <div class="container">
+
+      <div class="dialog-scene">
+        <img src="images/Rimuri3.webp" alt="Rimuru" class="dialog-char">
+        <div class="dialog-bubble">
+          <span class="dialog-name">Rimuru Tempest</span>
+          <p>Čud smrtelníku! Jsem Rimuru, Demon Lord a zakladatel Tempestu. Potřebujeme postavit lodě pro obchodní cesty. Byl jsi vybrán/a jako hlavní stavitel/ka no cap. Teď se to nauč nebo budeě jíst jídlo od Shion.</p>
+        </div>
+      </div>
+
+      <h2 class="section-title">📐 Archimédův zákon — lákadlo na chytrý hoky nebo bad boye</h2>
+
+      <div class="formula-hero">
+        <div class="formula-display">F<sub>vz</sub> = V · ρ · g</div>
+        <p class="formula-desc">Vztlaková síla = Objem × Hustota kapaliny × Tíhové zrychlení</p>
+      </div>
+
+      <!-- Karty veličin -->
+      <div class="units-grid">
+
+        <div class="unit-card card-fvz">
+          <div class="unit-symbol">F<sub>vz</sub></div>
+          <div class="unit-name">Vztlaková síla</div>
+          <div class="unit-unit">[N] — Newtony</div>
+          <div class="unit-story">
+            <img src="images/Rimuri3.webp" alt="" class="unit-avatar">
+            <p>Tohle je síla, která <strong>tlačí věci nahoru</strong> z vody. Čím víc vody těleso vytlačí, tím silněji ho voda žene k hladině. Když je F<sub>vz</sub> větší než tíha tělesa — plave! Když je menší — klesá.</p>
+          </div>
+          <div class="unit-tempest">💧 Já jsem slime většian mého těla je podobná vodě — voda mě tlačí nahoru a já plavu bez námahy!</div>
+        </div>
+
+        <div class="unit-card card-v">
+          <div class="unit-symbol">V</div>
+          <div class="unit-name">Objem</div>
+          <div class="unit-unit">[m³] — metry krychlové</div>
+          <div class="unit-story">
+            <img src="images/Rimuri4.webp" alt="" class="unit-avatar">
+            <p><strong>Kolik místa</strong> těleso zabírá ve vodě. Větší loď vytlačí víc vody → dostane větší vztlak. Myslíš si, že železo se vždy potopí? Omyl! Záleží na tvaru — dutá loď má velký objem!</p>
+          </div>
+          <div class="unit-tempest">📦 Gobta má svaly a kosti — husté tělo, malý objem na svou váhu. Proto plave hůř než já! (Fr co si budem je tlustej)</div>
+        </div>
+
+        <div class="unit-card card-rho">
+          <div class="unit-symbol">ρ</div>
+          <div class="unit-name">Hustota kapaliny (ró)</div>
+          <div class="unit-unit">[kg/m³] — kilogramy na metr krychlový</div>
+          <div class="unit-story">
+            <img src="images/Rimuri.webp" alt="" class="unit-avatar">
+            <p><strong>Jak „těžká" je kapalina</strong> — kolik hmotnosti se vejde do jednoho metru krychlového. Slaná mořská voda (1 025 kg/m³) je hustší než sladká (1 000 kg/m³). V hustší kapalině vztlak roste!</p>
+          </div>
+          <div class="unit-tempest">🌊 Plavat v moři je lehčí než v řece — voda je těžší a víc tě nese. Nepij to vole!</div>
+        </div>
+
+        <div class="unit-card card-g">
+          <div class="unit-symbol">g</div>
+          <div class="unit-name">Tíhové zrychlení</div>
+          <div class="unit-unit">[m/s²] — vždy 9,81</div>
+          <div class="unit-story">
+            <img src="images/Rimuri2.webp" alt="" class="unit-avatar">
+            <p><strong>Síla gravitace</strong> — jak moc Země táhne vše dolů. Na Zemi je to vždy přibližně 9,81 m/s². Bez gravitace by nebylo ani plavání ani topení — vše by jen létalo!</p>
+          </div>
+          <div class="unit-tempest">🌍 Gravitace platí všude — v Tempest i na Zemi. Ve vzorci ji nepřeskakuj, přeskakuj překažky jako Tary. Nebo pošli předžalobku</div>
+        </div>
+
+      </div>
+
+      <div class="dialog-scene">
+        <img src="images/Rimuri4.webp" alt="Rimuru" class="dialog-char">
+        <div class="dialog-bubble">
+          <span class="dialog-name">Rimuru Tempest</span>
+          <p>Takže shrnutí: <strong>větší objem V</strong> = větší vztlak. <strong>Hustší kapalina ρ</strong> = větší vztlak. A gravitace g je vždy 9,81 — ta se nezapomíná! Tak teď to znáš a mazej do práce! Nebo žádný subwaysurfers.</p>
+        </div>
+      </div>
+
+      <div class="goto-game">
+        <button class="btn-main btn-big" onclick="openGame()">⚓ Spustit hru — Tempest Loděnice</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== HERNÍ MODAL ===== -->
+  <div id="gameOverlay" class="game-overlay hidden">
+    <div class="game-window">
+      <button class="game-close" onclick="closeGame()">✕</button>
+
+      <!-- Krok 0: Jméno -->
+      <div id="stepName" class="game-step active">
+        <div class="game-dialog">
+          <img src="images/Rimuri3.webp" alt="Rimuru" class="game-char">
+          <div class="dialog-bubble">
+            <span class="dialog-name">Rimuru Tempest</span>
+            <p>Vítej v Tempest Loděnici! Dříve než začneme stavět — jak ti mám říkat, nový konstruktore?</p>
+          </div>
+        </div>
+        <div class="name-input-row">
+          <input type="text" id="playerNameInput" placeholder="Zadej své jméno..." maxlength="20" autocomplete="off">
+          <button class="btn-main" onclick="confirmName()">Potvrdit →</button>
+        </div>
+      </div>
+
+      <!-- Krok 1: Výběr tvaru -->
+      <div id="stepShape" class="game-step hidden">
+        <div class="game-dialog">
+          <img src="images/Rimuri4.webp" alt="Rimuru" class="game-char" id="shapeChar">
+          <div class="dialog-bubble">
+            <span class="dialog-name">Rimuru Tempest</span>
+            <p id="shapeText">Výborně! Benimaru potřebuje loď. Vyber tvar trupu — pamatuj, čím víc vody trup vytlačí, tím větší vztlak dostaneme!</p>
+          </div>
+        </div>
+
+        <h3 class="game-subtitle">Vyber tvar trupu lodi</h3>
+        <p class="game-hint"><span style="color:#e74c3c">■</span> Červená část = pod vodou &nbsp;|&nbsp; <span style="color:#95a5a6">■</span> Stříbrná část = nad vodou</p>
+
+        <div class="shape-grid" id="shapeGrid">
+          <div class="shape-card" data-shape="sphere" data-eff="0.18" data-vol="28" onclick="selectShape(this)">
+            <div class="ship-preview">
+              <svg viewBox="0 0 120 85" width="120" height="85">
+                <ellipse cx="60" cy="60" rx="50" ry="22" fill="#c0392b" opacity="0.9"/>
+                <ellipse cx="60" cy="38" rx="50" ry="22" fill="#bdc3c7"/>
+                <line x1="8" y1="60" x2="112" y2="60" stroke="#2980b9" stroke-width="2" stroke-dasharray="5,3"/>
+                <text x="60" y="80" text-anchor="middle" font-size="9" fill="#922b21">pod vodou</text>
+              </svg>
+            </div>
+            <div class="shape-name">Kulatý trup</div>
+            <div class="shape-desc">Nestabilní, malý objem pod vodou</div>
+          </div>
+
+          <div class="shape-card" data-shape="flat" data-eff="0.45" data-vol="54" onclick="selectShape(this)">
+            <div class="ship-preview">
+              <svg viewBox="0 0 120 85" width="120" height="85">
+                <rect x="8" y="52" width="104" height="22" rx="3" fill="#c0392b" opacity="0.9"/>
+                <rect x="8" y="28" width="104" height="24" rx="3" fill="#bdc3c7"/>
+                <rect x="40" y="16" width="40" height="14" rx="2" fill="#95a5a6"/>
+                <line x1="4" y1="52" x2="116" y2="52" stroke="#2980b9" stroke-width="2" stroke-dasharray="5,3"/>
+                <text x="60" y="80" text-anchor="middle" font-size="9" fill="#922b21">pod vodou</text>
+              </svg>
+            </div>
+            <div class="shape-name">Plochý trup</div>
+            <div class="shape-desc">Stabilní, průměrný ponor</div>
+          </div>
+
+          <div class="shape-card" data-shape="vtrup" data-eff="0.72" data-vol="90" onclick="selectShape(this)">
+            <div class="ship-preview">
+              <svg viewBox="0 0 120 85" width="120" height="85">
+                <polygon points="20,48 100,48 90,72 30,72" fill="#c0392b" opacity="0.9"/>
+                <polygon points="8,22 112,22 100,48 20,48" fill="#bdc3c7"/>
+                <rect x="42" y="10" width="36" height="14" rx="2" fill="#95a5a6"/>
+                <line x1="4" y1="48" x2="116" y2="48" stroke="#2980b9" stroke-width="2" stroke-dasharray="5,3"/>
+                <text x="60" y="80" text-anchor="middle" font-size="9" fill="#922b21">pod vodou</text>
+              </svg>
+            </div>
+            <div class="shape-name">V-trup</div>
+            <div class="shape-desc">Dobrý výkon, větší ponor</div>
+          </div>
+
+          <div class="shape-card" data-shape="optimal" data-eff="0.95" data-vol="130" onclick="selectShape(this)">
+            <div class="ship-preview">
+              <svg viewBox="0 0 120 85" width="120" height="85">
+                <path d="M10,46 Q60,66 110,46 L106,70 Q60,78 14,70 Z" fill="#c0392b" opacity="0.9"/>
+                <path d="M6,20 Q60,12 114,20 L110,46 Q60,66 10,46 Z" fill="#bdc3c7"/>
+                <rect x="40" y="8" width="40" height="14" rx="2" fill="#95a5a6"/>
+                <line x1="4" y1="46" x2="116" y2="46" stroke="#2980b9" stroke-width="2" stroke-dasharray="5,3"/>
+                <text x="60" y="80" text-anchor="middle" font-size="9" fill="#922b21">pod vodou</text>
+              </svg>
+            </div>
+            <div class="shape-name">Hydrodynamický trup</div>
+            <div class="shape-desc">Nejlepší tvar — jako opravdová loď!</div>
+          </div>
+        </div>
+
+        <div id="shapeResult" class="shape-result hidden">
+          <div class="game-dialog">
+            <img src="images/Rimuri3.webp" alt="Rimuru" class="game-char" id="shapeResultChar">
+            <div class="dialog-bubble">
+              <span class="dialog-name">Rimuru Tempest</span>
+              <p id="shapeResultText"></p>
+            </div>
+          </div>
+          <div class="calc-box">
+            <div class="calc-row"><span>Vytlačený objem (V):</span><strong id="calcV">—</strong></div>
+            <div class="calc-row"><span>Hustota vody (ρ):</span><strong>1 000 kg/m³</strong></div>
+            <div class="calc-row"><span>Tíhové zrychlení (g):</span><strong>9,81 m/s²</strong></div>
+            <div class="calc-row calc-result"><span>Vztlaková síla F<sub>vz</sub>:</span><strong id="calcFvz">—</strong></div>
+          </div>
+          <button class="btn-main" onclick="goToBalance()">Pokračovat na nakládání →</button>
+        </div>
+      </div>
+
+      <!-- Krok 2: Vyvažování -->
+      <div id="stepBalance" class="game-step hidden">
+        <div class="game-dialog">
+          <img src="images/Rimuri3.webp" alt="Rimuru" class="game-char" id="balanceChar">
+          <div class="dialog-bubble">
+            <span class="dialog-name">Rimuru Tempest</span>
+            <p id="balanceText">Loď je hotová! Teď ji musíme naložit. Dávej pozor — nesmíme překročit nosnost, jinak se Shioniny zásoby dostanou ke dnu! (ne že by to byla škoda)</p>
+          </div>
+        </div>
+
+        <h3 class="game-subtitle">Naloď loď správně!</h3>
+        <p class="game-hint">Loď nesmí být přetížená — sleduj, jak klesá pod vodu.</p>
+
+        <div class="balance-layout">
+          <div class="balance-controls">
+            <div class="slider-group">
+              <label>⚔️ Posádka vojáků <span class="slider-badge" id="lblCrew">20 lidí</span></label>
+              <input type="range" min="5" max="80" value="20" step="1" id="slCrew" oninput="updateBalance()">
+              <div class="slider-hint">Každý voják = přibližně 80 kg</div>
+            </div>
+            <div class="slider-group">
+              <label>🍱 Zásoby jídla <span class="slider-badge" id="lblFood">10 t</span></label>
+              <input type="range" min="0" max="100" value="10" step="1" id="slFood" oninput="updateBalance()">
+              <div class="slider-hint">Shioniny zásoby pro posádku</div>
+            </div>
+            <div class="slider-group">
+              <label>🛡️ Zbraně a zbroj <span class="slider-badge" id="lblWeapon">5 t</span></label>
+              <input type="range" min="0" max="60" value="5" step="1" id="slWeapon" oninput="updateBalance()">
+              <div class="slider-hint">Výzbroj pro vojáky</div>
+            </div>
+          </div>
+
+          <div class="balance-visual">
+            <div class="water-scene">
+              <div class="sky-area" id="skyArea">
+                <div class="ship-above-water" id="shipAbove">
+                  <div class="ship-cabin-area"></div>
+                </div>
+              </div>
+              <div class="water-area" id="waterArea">
+                <div class="ship-below-water" id="shipBelow"></div>
+              </div>
+            </div>
+            <div class="balance-stats">
+              <div class="bstat">
+                <div class="bstat-val" id="bCap">—</div>
+                <div class="bstat-lbl">Nosnost (t)</div>
+              </div>
+              <div class="bstat">
+                <div class="bstat-val" id="bLoad">—</div>
+                <div class="bstat-lbl">Náklad (t)</div>
+              </div>
+              <div class="bstat bstat-margin">
+                <div class="bstat-val" id="bMargin">—</div>
+                <div class="bstat-lbl">Rezerva (t)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="balanceCheckRow" class="check-row">
+          <button class="btn-main" onclick="checkBalance()">⚓ Zkontrolovat loď!</button>
+        </div>
+
+        <div id="balanceResult" class="balance-result-box hidden">
+          <div class="game-dialog">
+            <img src="images/Rimuri3.webp" alt="Rimuru" class="game-char" id="balanceResultChar">
+            <div class="dialog-bubble">
+              <span class="dialog-name">Rimuru Tempest</span>
+              <p id="balanceResultText"></p>
+            </div>
+          </div>
+          <div class="final-formula">
+            <p>Výpočet pro tvou loď:</p>
+            <div class="formula-display small">F<sub>vz</sub> = V · ρ · g</div>
+            <div class="calc-box" id="finalCalcBox"></div>
+          </div>
+          <button class="btn-main btn-big" onclick="restartGame()">🔄 Zkusit znovu</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Tempest Akademie fyziky · Inspired by <em>That Time I Got Reincarnated as a Slime</em></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
